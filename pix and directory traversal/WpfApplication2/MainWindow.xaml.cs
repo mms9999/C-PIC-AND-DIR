@@ -97,6 +97,31 @@ namespace WpfApplication2
 
         }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            string[] file1 = File.ReadAllLines(@"C:\Users\danielnguyen\Desktop\text1.txt"); // read all the lines in the text files
+            string[] file2 = File.ReadAllLines(@"C:\Users\danielnguyen\Desktop\text2.txt");
+            // create a text3 file
+            using (StreamWriter writer = File.CreateText(@"C:\Users\danielnguyen\Desktop\text3.txt"))
+            {
+                int lineNum = 0; // initialize, starting at lineNum 0
+                while(lineNum < file1.Length || lineNum < file2.Length) // as long line is not greater than the length of file 1 or file 3
+                {
+                    if (lineNum < file1.Length)
+                    {
+                        mergeBox.Text = (file1[lineNum]); // show in the text box
+                        writer.WriteLine(file1[lineNum]); // write to the text3 file 
+                    }
+                    if (lineNum < file2.Length)
+                    {
+                        mergeBox.Text = (file2[lineNum]);// show in the text box
+                        writer.WriteLine(file2[lineNum]);// write to the text3 file 
+                    }
+                    lineNum++; // go to next line?
+                }
+            }
+        }
+
        
     }
 }

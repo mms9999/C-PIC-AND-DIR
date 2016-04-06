@@ -3,14 +3,16 @@
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="30,130,0,0" VerticalAlignment="Top" Width="106" Height="41" Click="Button_Click"/>
-        <TextBox Name ="textBox" HorizontalAlignment="Left" Height="111" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="166" TextChanged="TextBox_TextChanged"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="10,109,0,0" VerticalAlignment="Top" Width="106" Height="41" Click="Button_Click"/>
+        <TextBox Name ="textBox" HorizontalAlignment="Left" Height="89" Margin="10,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="117" TextChanged="TextBox_TextChanged"/>
         <Button x:Name="bOpenFileDialog" Content="Open File"
                  Height="30" Width="60" Margin="242,101,0,0"
                  HorizontalAlignment="Left" VerticalAlignment="Top" 
                  Click="bOpenFileDialog_Click" />
         <TextBox Name="text23" HorizontalAlignment="Left" Height="80" Margin="191,10,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="166"/>
-        <Button Content="Button" HorizontalAlignment="Left" Margin="204,265,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
-        <Image Name="pictureBox" HorizontalAlignment="Left" Height="100" Margin="191,149,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="Button" HorizontalAlignment="Left" Margin="407,130,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_1"/>
+        <Image Name="pictureBox" HorizontalAlignment="Left" Height="100" Margin="407,21,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button Content="merge" HorizontalAlignment="Left" Margin="123,262,0,0" VerticalAlignment="Top" Width="75" Click="Button_Click_2"/>
+        <TextBox Name ="mergeBox" HorizontalAlignment="Left" Height="55" Margin="57,190,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="197"/>
     </Grid>
 </Window>
